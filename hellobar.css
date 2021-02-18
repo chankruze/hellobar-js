@@ -1,0 +1,138 @@
+/*
+Author: chankruze (chankruze@geekofia.in)
+Created: Thu Feb 18 2021 00:50:10 GMT+0530 (India Standard Time)
+
+Copyright (c) Geekofia 2021 and beyond
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+#hellobar * {
+  padding: 0;
+  margin: 0;
+}
+
+#hellobar {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: #0fcb80;
+  text-align: center;
+  animation: fadeIn 200ms ease-in-out both;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Modal Content/Box */
+#hwrapper {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background: pink; */
+  margin: 10% auto 0 auto;
+  /* background: #ff0000; */
+  padding: 1rem;
+}
+
+#htitle {
+  font-size: 2.3rem;
+  line-height: 2.8rem;
+  font-family: 'Lexend Deca', sans-serif;
+  color: #fff;
+  padding: 0.5rem 0.25rem;
+  /* background: red; */
+}
+
+#htitle a {
+  color: #fff;
+  transition: all 200ms ease-in-out;
+}
+
+#htitle a:hover {
+  color: #005835;
+}
+
+#hbody {
+  padding: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8rem;
+  /* color: #000; */
+  font-size: 1.1rem;
+  color: #004429;
+  font-size: 1rem;
+  /* background: chartreuse; */
+}
+
+#hemail {
+  /* height: 3rem; */
+  /* border-radius: 1rem; */
+  background: #007747;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  box-shadow: 4px 4px 8px #00804d;
+  margin-top: 1rem;
+  /* margin-bottom: 1rem; */
+}
+
+#hemail:hover {
+  background: #01663e;
+}
+
+/* The Close Button */
+#close {
+  color: #007244;
+  /* float: right; */
+  font-size: 3rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* background: pink; */
+  padding: 0 1rem;
+  transition: all 200ms ease-in-out;
+}
+
+#close:hover,
+#close:focus {
+  color: #00492c;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#footer {
+  font-family: "Pacifico", cursive;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 0.9rem;
+  padding: 1rem;
+  color: #005a36;
+}
+
+#footer a {
+  color: #005a36;
+}
+
+#footer a:hover {
+  color: #00331f;
+}
